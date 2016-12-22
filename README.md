@@ -1,8 +1,48 @@
 # SitecoreCopyPageToVersions
 
+1. [Management Summary](#management-summary)
+2. [Installation](#installation)
+3. [Assembly references and dependencies](#assembly-references-and-dependencies)
+4. [Configuration](#configuration)
+5. [Usage](#usage)
+    * [Copy Page To Versions Dialog](#copy-page-to-versions-dialog)
+6. [Dependent items and components](#dependent-items-and-components)
+    * [Sitecore Items](#sitecore-items)
+    * [Code Files](#code-files)
+7. [Security](#security)
+8. [Performance](#performance)
+
 ## Management Summary
 
+_Copy Page To Versions_ is an extension for the Content Editor and the Experience Editor. It provides a dialog for content editors, where a page in a specific version can be copied to a selectable list of language versions. This includes all datasources referenced on the page renderings. 
+
+The Current version is tested on Sitecore 8.1
+
 ## Installation
+
+To install _Copy Page To Versions_ perform the following steps:
+* Download the Sitecore installation package from [Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_8plus_V-1.0.zip](Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_8plus_V-1.0.zip)
+* Install the downloaded package via Sitecore's _Installation Wizard_
+
+The package ships with:
+* Sitecore items (for further information see section _Dependent items and components)
+* Namics.Common.Packages.CopyPageToVersions.config
+* JavaScript files for the speak dialog (for further information see section _Dependent items and components)
+* Binary Namics.Common.Packages.CopyPageToVersions.dll
+
+## Assembly references and dependencies
+All assemblies referenced by _Namics.Common.Packages.CopyPageToVersions.dll_, are shiped with a common Sitecore installation.
+The assembly is compiled against the following assembly references:
+
+| Assembly  | Version  |
+|---|---|
+| Newtonsoft.Json  | 6.0.0.0  |
+| Sitecore.Kernel  | 8.1.0.0  |
+| Sitecore.Mvc  | 1.0.0.0  |
+| Sitecore.Speak.Applications  | 1.3.1.0  |
+| Sitecore.Speak.Client  | 2.0.811.0  |
+| System.Web.Http.WebHost  | 5.2.3.0  |
+| System.Web.Mvc  | 5.2.3.0  |
 
 ## Configuration
 The whitelisting of translatable templates is taken from the "Copy Page To Versions Configuration" under _/sitecore/system/Modules/Copy Page To Versions/Copy Page To Versions Configuration_.
@@ -37,7 +77,26 @@ In the content editor, the button is only enabled, if the selected item is a con
 | Final Confirmation  | This flag needs to be set as final confirmation, that the Copy-Button gets enabled  |
 
 ## Dependent items and components
+### Sitecore Items
+The following Sitecore items are needed
+| Database  | Item  | Description   |
+|---|---|----|
+| core  | /sitecore/client/Applications/Dialogs/CopyPageToVersionsDialog*  | The dialog  | 
+| core  | /sitecore/client/Applications/ExperienceEditor/Pipelines/User Defined/CopyPageToVersions*  | The dialog pipelines   |
+| core  | /sitecore/client/Business Component Library/version 1/Layouts/Renderings/Resources/Rule/Rules/Actions/CopyPageToVersions  | The rule action for the copy button   |
+| core  | /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Versions/Copy*  | The webedit ribbon button for the experience editor   |
+| core  | /sitecore/content/Applications/Content Editor/Ribbons/Chunks/Copy Page To Versions Chunk* <br> /sitecore/content/Applications/Content Editor/Ribbons/Strips/Versions/Copy*  | The custom chunk and button in the versions ribbon in content editor   |
+| master  | /sitecore/system/Modules/Copy Page To Versions  | The configuration item for the template whitelisting   |
+| master  | /sitecore/templates/User Defined/Copy Page To Versions  | The template for the configuration   |
 
+### Code Files
+The following JavaScript files are needed for the dialog
+| Name  | Path  | Description   |
+|---|---|----|
+| CopyPageToVersions.js  | \sitecore modules\Web\CopyPageToVersions\Commands\CopyPageToVersions.js  | Handles the button command. Defines canExecute and executes the CopyPageToVersionsPipeline   |
+| CopyPageToVersionsDialog.js  | \sitecore modules\Web\CopyPageToVersions\Dialogs\CopyPageToVersionsDialog.js  | Dialog JS tho handle events in the dialog. i.e. checking a selection and show message bar   |
+| CopyPageToVersions.OpenDialog.js  | \sitecore modules\Web\CopyPageToVersions\Pipelines\CopyPageToVersions.OpenDialog.js  | Pipeline JS which opens the dialog   |
+| CopyPageToVersions.js  | \sitecore\shell\client\Speak\Layouts\Renderings\Resources\Rules\ConditionsAndActions\Actions\CopyPageToVersions.js  | Rule Action which is registered on the Copy-Button. Handles the dialog submission and calls the CopyPageToVersionsController with the submission data   |
 
 ## Security
 CopyPageToVersionsController checks if a user is authenticated and only runs the processor if current context is master. 
