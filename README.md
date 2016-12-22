@@ -79,6 +79,7 @@ In the content editor, the button is only enabled, if the selected item is a con
 ## Dependent items and components
 ### Sitecore Items
 The following Sitecore items are needed
+
 | Database  | Item  | Description   |
 |---|---|----|
 | core  | /sitecore/client/Applications/Dialogs/CopyPageToVersionsDialog*  | The dialog  | 
@@ -91,6 +92,7 @@ The following Sitecore items are needed
 
 ### Code Files
 The following JavaScript files are needed for the dialog
+
 | Name  | Path  | Description   |
 |---|---|----|
 | CopyPageToVersions.js  | \sitecore modules\Web\CopyPageToVersions\Commands\CopyPageToVersions.js  | Handles the button command. Defines canExecute and executes the CopyPageToVersionsPipeline   |
