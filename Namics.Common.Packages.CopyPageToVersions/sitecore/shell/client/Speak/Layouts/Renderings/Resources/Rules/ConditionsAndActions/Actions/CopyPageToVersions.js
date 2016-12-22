@@ -28,7 +28,7 @@
         }
 
         var sendRequest = function (metadata) {
-            jQuery.post("/api/copypagetoversions/copypagetoversion", metadata, null, "json").success(function (data) {
+            jQuery.post("/sitecore/shell/api/copypagetoversions/copypagetoversion", metadata, null, "json").success(function (data) {
                 alert(data.message);
             }).always(function () {
                 context.app.closeDialog();

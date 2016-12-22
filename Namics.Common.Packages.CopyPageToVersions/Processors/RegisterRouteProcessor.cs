@@ -18,7 +18,7 @@ namespace Namics.Common.Packages.CopyPageToVersions.Processors
             HttpConfiguration config = GlobalConfiguration.Configuration;
 
             config.Routes.MapHttpRoute("CopyPageToVerions",
-                "api/{controller}/{action}/{id}",
+                "sitecore/shell/api/{controller}/{action}/{id}",
                 new {controller = "copypagetoversions", action = "copypagetoversion", id = RouteParameter.Optional});
         }
     }
