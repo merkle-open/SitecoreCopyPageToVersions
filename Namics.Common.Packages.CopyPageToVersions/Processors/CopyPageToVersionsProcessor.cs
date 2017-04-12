@@ -92,9 +92,8 @@ namespace Namics.Common.Packages.CopyPageToVersions.Processors
                 {
                     CopyFieldValues(sourceItem, localizedItemVersion, forceCopy);
                 }
+                return localizedItemVersion;
             }
-
-            return targetItem;
         }
 
         private void CopyFieldValues(Item source, Item target, bool forceCopy)
