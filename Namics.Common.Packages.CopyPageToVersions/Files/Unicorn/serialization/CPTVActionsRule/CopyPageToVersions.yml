@@ -1,0 +1,21 @@
+﻿---
+ID: "778c5c01-f86c-4b23-870e-2a3646b38499"
+Parent: "d4cabaef-f4ea-4167-a633-82f45e230860"
+Template: "f90052a5-b4e6-4e6d-9812-1e1b88a6fcea"
+Path: /sitecore/client/Business Component Library/version 1/Layouts/Renderings/Resources/Rule/Rules/Actions/CopyPageToVersions
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160128T144834Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "eeb36a3b-40d9-4af5-862a-de257b84dca3"
+      Hint: Text
+      Value: "set the Option1CheckBox to [option1CheckBox,,,checkBox1]'s text property, the Option2CheckBox to [option2CheckBox,,,checkBox2]'s text property, the Option3CheckBox to [option3CheckBox,,,checkBox3]'s text property, the SourceLanguageTreeView to [sourceLanguageTreeView,,,itemTreeView1]'s selected items property, the TargetLanguageTreeView to [targetLanguageTreeView,,,itemTreeView2]'s selected items property, the SourceLanguage id to [sourceLanguage,,,textBox1]'s text property and  the PageId to [pageId,,,textBox2]'s text property"

@@ -1,0 +1,31 @@
+﻿---
+ID: "f5805b8f-4867-4c07-8d86-579ac42aa6a6"
+Parent: "d2388938-c296-40c0-8587-a9c77e8f23fa"
+Template: "d2388938-c296-40c0-8587-a9c77e8f23fa"
+Path: /sitecore/templates/Foundation/CopyPageToVersions/Configurations/Copy Page To Versions Configuration/__Standard Values
+DB: master
+SharedFields:
+- ID: "a4c5b893-ad07-45bf-abb2-67a33961b778"
+  Hint: Template Whitelist
+  Type: Treelist
+  Value: "{76036F5E-CBCE-46D1-AF0A-4143F9B557AA}"
+- ID: "d1b12e10-6913-446b-8599-796f71dc9c2a"
+  Hint: Filter Whitelisted Templates
+  Type: Checkbox
+  Value: 1
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161219T093007Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

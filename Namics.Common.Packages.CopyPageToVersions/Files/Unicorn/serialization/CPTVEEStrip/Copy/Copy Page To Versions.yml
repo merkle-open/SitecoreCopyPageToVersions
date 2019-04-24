@@ -1,0 +1,72 @@
+﻿---
+ID: "271f87af-a1db-41fe-b1cf-54fcb53a376e"
+Parent: "84a78cf1-c9b6-4473-af5f-0c2853ac1a39"
+Template: "1db34c92-03b0-4475-9a39-da14e4d9d8fc"
+Path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Versions/Copy/Copy Page To Versions
+DB: core
+SharedFields:
+- ID: "1193b1a3-0148-413f-a979-49b39aa4a2af"
+  Hint: ID
+  Value: CopyPageToVersionsRibbonButton
+- ID: "d47ed548-84d5-4622-9886-5cc164727507"
+  Hint: Icon
+  Value: Office/32x32/elements3.png
+- ID: "dbbf9ee3-c30e-4456-a81f-ed8c2e8df91b"
+  Hint: Click
+  Value: "item:publish(id=$Target)"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          id="{28D7AA23-A9A3-4ABC-9DE6-AA717F6177CD}"
+          par="Id=LargeButton&amp;Click=trigger%3abutton%3aclick&amp;Command=CopyPageToVersions&amp;PageCodeScriptFileName=%2fsitecore+modules%2fWeb%2fCopyPageToVersions%2fCommands%2fCopyPageToVersions.js"
+          uid="{7C9E7C54-77D7-4552-869A-541CDE53118F}" />
+        <r
+          id="{21E86498-6C8E-4F3B-83F2-B49E5E0ABE16}"
+          par="PipelineItemId=%7b292BA6CE-9028-446B-92D9-43872E1B46B5%7d&amp;Id=CopyPageToVersionsPipeline&amp;LoadMode=WhenRun&amp;UseBundle=1"
+          uid="{5BEC1E17-141E-49D4-815F-793339D5261A}" />
+      </d>
+    </r>
+Languages:
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Zurücksetzen
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161219T154639Z
+    - ID: "4df6da21-e745-444c-956e-1d4a96ab8821"
+      Hint: Header
+      Value: Copy Page To Versions
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a1a31a93-c4a0-4396-b629-67c33001a3cf"
+      Hint: Tooltip
+      Value: Copy the current page version including renderings to desired language versions
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150216T134256Z
+    - ID: "4df6da21-e745-444c-956e-1d4a96ab8821"
+      Hint: Header
+      Value: Copy Page To Versions
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a1a31a93-c4a0-4396-b629-67c33001a3cf"
+      Hint: Tooltip
+      Value: Copy the current page version including renderings to desired language versions

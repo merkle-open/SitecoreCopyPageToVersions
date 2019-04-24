@@ -16,12 +16,16 @@
 
 _Copy Page To Versions_ is an extension for the Content Editor and the Experience Editor. It provides a dialog for content editors, where a page in a specific version can be copied to a selectable list of language versions. This includes all datasources referenced on the page renderings. 
 
-The Current version is tested on Sitecore 8.1
+The Current version is tested on Sitecore 9.0.1
 
 ## Installation
 
+The module is available as Sitecore package for the Package Installer or as NuGet package.
+
+### Via item package
+
 To install _Copy Page To Versions_ perform the following steps:
-* Download the Sitecore installation package from [Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_8plus_V-1.0.zip](Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_8plus_V-1.0.zip)
+* Download the Sitecore installation package from [Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_9plus_V-1.1.zip](Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_9plus_V-1.1.zip)
 * Install the downloaded package via Sitecore's _Installation Wizard_
 
 The package ships with:
@@ -30,17 +34,30 @@ The package ships with:
 * JavaScript files for the speak dialog (for further information see section _Dependent items and components)
 * Binary Namics.Common.Packages.CopyPageToVersions.dll
 
+If you only need the Sitecore items there you can also just install the following package:
+* [Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_9plus_V-1.1_Items_Only.zip](Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_9plus_V-1.1_Items_Only.zip)
+
+### Via NuGet package
+
+* Install the Nuget Package 'Namics.Common.Packages.CopyPageToVersions.Sc90' from https://www.nuget.org on your desired Sitecore Helix Foundation moule. 
+* If necessary, consolidate Newtonsoft.Json version with your other projects in the Solution, preferably v10.0.3
+* If you use Unicorn...
+    * Enable the example serialization config file, by changing removing the .example extension and adapt it to your needs: [Namics.Common.Packages.CopyPageToVersions.Serialization.config.example](Namics.Common.Packages.CopyPageToVersions/App_Config/Include/zCustom/Foundation/CopyPageToVersions/Namics.Common.Packages.CopyPageToVersions.Serialization.config.example)
+    * Find the serialized yml files under [Namics.Common.Packages.CopyPageToVersions/Files/Unicorn](Namics.Common.Packages.CopyPageToVersions/Files/Unicorn)
+    * Copy the serialized files to your solutions serialization location
+* If you don't use Unicorn, use the items only package for installation on your environments: [Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_9plus_V-1.1_Items_Only.zip](Namics.Common.Packages.CopyPageToVersions/Files/Sitecore_Packages/SitecoreCopyPageToVersions_Sitecore_9plus_V-1.1_Items_Only.zip)
+
 ## Assembly references and dependencies
 All assemblies referenced by _Namics.Common.Packages.CopyPageToVersions.dll_, are shiped with a common Sitecore installation.
 The assembly is compiled against the following assembly references:
 
 | Assembly  | Version  |
 |---|---|
-| Newtonsoft.Json  | 6.0.0.0  |
-| Sitecore.Kernel  | 8.1.0.0  |
-| Sitecore.Mvc  | 1.0.0.0  |
-| Sitecore.Speak.Applications  | 1.3.1.0  |
-| Sitecore.Speak.Client  | 2.0.811.0  |
+| Newtonsoft.Json  | 10.0.3  |
+| Sitecore.Kernel  | 11.1.0.0  |
+| Sitecore.Mvc  | 2.1.0.0  |
+| Sitecore.Speak.Applications  | 2.1.0.0  |
+| Sitecore.Speak.Client  | 3.1.0.0  |
 | System.Web.Http.WebHost  | 5.2.3.0  |
 | System.Web.Mvc  | 5.2.3.0  |
 

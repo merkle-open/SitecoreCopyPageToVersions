@@ -1,0 +1,22 @@
+﻿---
+ID: "292ba6ce-9028-446b-92d9-43872e1b46b5"
+Parent: "1a4d88db-076f-44ff-a0f8-a0377ba4b909"
+Template: "ff017587-89bd-4578-b3e4-0fe4944c903f"
+Path: /sitecore/client/Applications/ExperienceEditor/Pipelines/Foundation/CopyPageToVersions/CopyPageToVersions
+DB: core
+SharedFields:
+- ID: "f0f36fdd-d818-4a1b-8273-7b1d1e7ee053"
+  Hint: PipelineName
+  Value: CopyPageToVersions
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160126T122128Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\nlenherr

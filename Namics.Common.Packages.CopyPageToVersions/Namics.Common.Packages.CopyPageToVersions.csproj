@@ -98,6 +98,7 @@
     <Content Include="App_Config\Include\zCustom\Foundation\CopyPageToVersions\Namics.Common.Packages.CopyPageToVersions.Serialization.config.example">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="Namics.Common.Packages.CopyPageToVersions.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

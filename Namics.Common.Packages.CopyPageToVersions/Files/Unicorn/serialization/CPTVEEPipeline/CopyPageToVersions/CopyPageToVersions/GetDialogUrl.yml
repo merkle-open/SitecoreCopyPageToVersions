@@ -1,0 +1,25 @@
+﻿---
+ID: "23ac77e3-764a-4c23-9986-e14ac76c4872"
+Parent: "292ba6ce-9028-446b-92d9-43872e1b46b5"
+Template: "8861a098-f3cd-4fd3-9557-0bc6c33d738e"
+Path: /sitecore/client/Applications/ExperienceEditor/Pipelines/Foundation/CopyPageToVersions/CopyPageToVersions/GetDialogUrl
+DB: core
+SharedFields:
+- ID: "20d0bb88-0649-4714-a6dd-585dd4ca5b4e"
+  Hint: ProcessorFile
+  Value: /sitecore modules/Web/CopyPageToVersions/Pipelines/CopyPageToVersions.OpenDialog.js
+- ID: "9e91baa8-5cac-48e0-8ab2-04219118bf08"
+  Hint: ProcessorName
+  Value: getDialogUrl
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160126T122331Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\nlenherr

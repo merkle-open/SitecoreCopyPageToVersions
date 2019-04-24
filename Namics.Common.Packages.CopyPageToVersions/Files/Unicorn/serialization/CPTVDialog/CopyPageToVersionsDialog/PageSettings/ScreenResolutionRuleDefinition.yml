@@ -1,0 +1,114 @@
+﻿---
+ID: "dff12b0f-12a0-4ee7-878e-f2456a107685"
+Parent: "96f06ca5-403b-4cee-881e-ef84352291b0"
+Template: "1f99ae6e-22b8-419e-81db-a983e619325e"
+Path: /sitecore/client/Applications/Dialogs/CopyPageToVersionsDialog/PageSettings/ScreenResolutionRuleDefinition
+DB: core
+SharedFields:
+- ID: "431a0113-9d08-4dae-8c5b-ac8301512bd8"
+  Hint: Rule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule>
+        <conditions>
+          <condition
+            id="{0B3B6E32-E4E5-40F6-A991-1E46C56C8ED0}"
+            uid="C2F10AC028D3411786E3F3EA09508DD9"
+            min="0"
+            max="750" />
+        </conditions>
+        <actions>
+          <action
+            id="{3DA33BB4-9E03-48CD-AC5C-E48B825DD4B6}"
+            uid="{43DB6A62-D29F-4135-9C23-EE8A6A81DA23}"
+            targetControlId="InfoSmartPanel"
+            propertyName="isOpen"
+            value="false" />
+        </actions>
+      </rule>
+      <rule
+        uid="25C15699938946499CB9696E51540AE0">
+        <conditions
+          uid="4D5918B2C95947A3A9845B5AC4EF899C">
+          <and
+            uid="ECC3F018724E4AF9A45F3814CBC35873">
+            <condition
+              id="{0B3B6E32-E4E5-40F6-A991-1E46C56C8ED0}"
+              uid="AFE46F14E5B04ABAA048CDC4658A3DD9"
+              min="751"
+              max="4000" />
+            <condition
+              id="{E956001C-6ACD-4CE0-B7CC-F2B6EE7DDA94}"
+              uid="A7549C194D974BA39FCF597661B38FBC"
+              name="ResultsListControl" />
+          </and>
+        </conditions>
+        <actions
+          uid="5E8BD2C030914084B13BE64B0AFA5F0A">
+          <action
+            id="{3DA33BB4-9E03-48CD-AC5C-E48B825DD4B6}"
+            uid="{E47F1622-5C6B-4EB2-8F90-AF2DDF2A5E91}"
+            targetControlId="InfoSmartPanel"
+            propertyName="isOpen"
+            value="true" />
+        </actions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ScreenResolutionRuleDefinition
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150812T120051Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: BildschirmauflösungRegeldefinition
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150812T115612Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130712T102011
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 画面の解像度ルール定義
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150812T115207Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

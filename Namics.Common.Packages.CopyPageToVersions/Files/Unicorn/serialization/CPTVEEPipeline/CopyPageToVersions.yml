@@ -1,0 +1,18 @@
+﻿---
+ID: "1a4d88db-076f-44ff-a0f8-a0377ba4b909"
+Parent: "3bbee1e8-70aa-4d4e-bf14-357e79aea9a5"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/client/Applications/ExperienceEditor/Pipelines/Foundation/CopyPageToVersions
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160126T122116Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\nlenherr

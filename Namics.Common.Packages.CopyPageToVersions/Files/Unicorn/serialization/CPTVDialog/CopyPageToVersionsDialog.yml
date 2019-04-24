@@ -1,0 +1,331 @@
+﻿---
+ID: "9ac25015-a0d6-4b41-8cae-4c438e182bd2"
+Parent: "648afada-20c7-413a-9636-44703a16dfcf"
+Template: "8152cf09-9dd0-40c0-b806-6e91fdf389bc"
+Path: /sitecore/client/Applications/Dialogs/CopyPageToVersionsDialog
+DB: core
+SharedFields:
+- ID: "5e642935-a6fc-48e9-b039-fe1136ced488"
+  Hint: Theme
+  Value: Oxford
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
+        <r
+          id="{DAFAFFB8-74AF-4141-A96A-70B16834CEC6}"
+          par="PageCodeTypeName=Namics.Common.Packages.CopyPageToVersions.Speak.Dialogs.CopyPageToVersionsDialog%2c+Namics.Common.Packages.CopyPageToVersions&amp;PageCodeScriptFileName=%2fsitecore+modules%2fWeb%2fCopyPageToVersions%2fDialogs%2fCopyPageToVersionsDialog.js"
+          ph="Page.Code"
+          uid="{237256AA-9D30-463E-9ED1-90CFF092FCF6}" />
+        <r
+          id="{DC707F46-7F5E-4BA1-9BF9-820B4A23EC3F}"
+          par="Id=Scrollbar&amp;PageScriptFileName=%2fsitecore%2fshell%2fclient%2fSpeak%2fAssets%2flib%2fui%2f1.1%2fbehaviors%2fScrollBar.js&amp;Name=Scrollbar"
+          ph="Page.Code"
+          uid="{998C94CE-8ECE-438C-A8CC-C635519DF988}" />
+        <r
+          id="{7BA20861-BC27-4F0E-94DD-8F974628A5C4}"
+          ph="Page.Body"
+          uid="{50606E5F-8450-418F-B448-859F66371220}" />
+        <r
+          id="{642C1164-3AE1-4D86-8474-3BC19FE4433B}"
+          ph="DialogHeader"
+          uid="{3AB2380C-C8AD-4B42-8848-69418CE847F8}" />
+        <r
+          ds="{BFA8A8DA-5297-4CD4-B7A4-E2C634E12A67}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=HeaderTitle"
+          ph="DialogHeader.Title"
+          uid="{1DC97590-77EC-4F75-A687-D86F7D22CAAA}" />
+        <r
+          id="{D8C6868D-7AE2-447F-9FD2-E712FDFA46C1}"
+          ph="DialogFooter"
+          uid="{A061A4E7-F47D-42F8-AC31-6D9F0441F9B2}" />
+        <r
+          id="{8817F241-28C9-45AA-8C8D-434E71BCEF4B}"
+          par="ShowToolbar=0"
+          ph="DialogContent"
+          uid="{57882B01-67A3-40A2-B6F0-F84287D6F584}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=EmptyColumn&amp;GridColumns=3"
+          ph="DialogContent.Main"
+          uid="{E9D291BF-BEB5-4FFE-BE45-1CEE16AD6C53}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=OverallColumnPanel&amp;GridColumns=6"
+          ph="DialogContent.Main"
+          uid="{6A7696A2-552A-4052-A999-62EE20F547F0}" />
+        <r
+          id="{910155C7-3881-4A56-90FB-D126490EDE55}"
+          par="Id=InfoMessageBar&amp;IsVisible=1&amp;Tooltip=Info+Messages&amp;Messages=%7b63FA5FF1-41CF-4562-895F-2C3C665AF41E%7d"
+          ph="OverallColumnPanel.Content"
+          uid="{0B6BD2D1-CDA1-4DCA-B259-84C7B71AD68F}" />
+        <r
+          id="{910155C7-3881-4A56-90FB-D126490EDE55}"
+          par="Id=WarnMessageBar1&amp;IsVisible=0&amp;Tooltip=Warn+Messages&amp;Messages=%7bDEA67F1B-4213-43E7-BBE9-A7690B11F7CD%7d"
+          ph="OverallColumnPanel.Content"
+          uid="{162C0964-A6F6-4E64-AA43-667FC53C33BF}" />
+        <r
+          id="{910155C7-3881-4A56-90FB-D126490EDE55}"
+          par="Id=WarnMessageBar2&amp;IsVisible=0&amp;Tooltip=Warn+Messages&amp;Messages=%7b0776263B-EA5E-4EE3-86DA-055EA0D9D98F%7d"
+          ph="OverallColumnPanel.Content"
+          uid="{46CC6781-3787-49F9-97DD-DDD5CB1A65BD}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="Id=OptionsPanel"
+          ph="OverallColumnPanel.Content"
+          uid="{125631D6-503F-4C18-AFE2-FEBC15A5C875}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=Option1LabelBorder&amp;PaddingType=All&amp;UsePadding=1"
+          ph="OptionsPanel.Content"
+          uid="{7CBD2473-31B5-4A2C-A59A-CAEC87733637}" />
+        <r
+          ds="{C7645514-43DA-42C0-BCEE-F3C8E6CCFD24}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=OptionsText"
+          ph="Option1LabelBorder.Content"
+          uid="{3199C97D-C312-4AB6-B4E4-6F8EE98F9FFC}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=Option1Border&amp;PaddingType=LeftBottom&amp;UsePadding=1"
+          ph="OptionsPanel.Content"
+          uid="{31498307-4B8B-4103-A68D-BDA4D2E460C9}" />
+        <r
+          ds="{7D11E3FC-A3F7-4B68-8933-7146D4B3842C}"
+          id="{3824DAB6-745A-468A-9D75-044591E72FB5}"
+          par="Id=Option1CheckBox"
+          ph="Option1Border.Content"
+          uid="{3C148511-6436-4DC3-97AC-78AEAAC62C6A}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=Option2Border&amp;PaddingType=LeftBottom&amp;UsePadding=1"
+          ph="OptionsPanel.Content"
+          uid="{16351CDB-9691-4E6F-A270-308F4476ED17}" />
+        <r
+          ds="{8831C37E-B868-4E21-BB86-51DEF7EDE43D}"
+          id="{3824DAB6-745A-468A-9D75-044591E72FB5}"
+          par="Id=Option2CheckBox"
+          ph="Option2Border.Content"
+          uid="{36EAE289-122D-44DB-A2AE-9567865C88C4}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=Option3Border&amp;PaddingType=LeftBottom&amp;UsePadding=1"
+          ph="OptionsPanel.Content"
+          uid="{C2402BCD-024F-4B29-AB7B-4BDF064C0C37}" />
+        <r
+          ds="{BF3584BB-46D0-4682-95BB-DF78FE79DE1C}"
+          id="{3824DAB6-745A-468A-9D75-044591E72FB5}"
+          par="Id=Option3CheckBox"
+          ph="Option3Border.Content"
+          uid="{4F0A5F50-BD9D-4BD5-B4B2-BB07CBEE4E6C}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="Id=LanguagesRowPanel"
+          ph="OverallColumnPanel.Content"
+          uid="{CDC0844C-D558-4C8A-9932-53DCE113BE59}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LanguagesColPanelLeft&amp;GridColumns=5"
+          ph="LanguagesRowPanel.Content"
+          uid="{A984097E-D9A4-41F9-923A-96DE7268075B}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LanguagesColPanelCenter&amp;GridColumns=2"
+          ph="LanguagesRowPanel.Content"
+          uid="{ED1D4407-C7C5-4C60-9918-A1576BFD72F6}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LanguagesColPanelRight&amp;GridColumns=5"
+          ph="LanguagesRowPanel.Content"
+          uid="{2F3DFECD-069F-4783-9D41-40F70A4562FA}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="GridColumns=6&amp;ContentAlign=Left&amp;Id=SourceLanguageBorder&amp;PaddingType=Bottom&amp;UsePadding=1"
+          ph="LanguagesColPanelLeft.Content"
+          uid="{F68E4A08-1110-4945-9815-0125DB927C50}" />
+        <r
+          ds="{6E18E986-8151-448A-A834-C2C04A4FDAAA}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=SourceLanguageText"
+          ph="SourceLanguageBorder.Content"
+          uid="{59112E40-24ED-47E0-B692-C3E9E6D0E6C7}" />
+        <r
+          id="{08B6767B-8E8A-41C8-8880-EFEBB4EAE0E3}"
+          par="Id=SourceLanguageTreeView&amp;PreLoadPath=%7b11111111-1111-1111-1111-111111111111%7d%2f%7b13D6D6C6-C50B-4BBD-B331-2B04F1A58F21%7d%2f%7b64C4F646-A3FA-4205-B98E-4DE2C609B60F%7d&amp;Database=master&amp;RootItem=%7b64C4F646-A3FA-4205-B98E-4DE2C609B60F%7d&amp;ShowIconImage=1&amp;IsCheckboxEnabled=0"
+          ph="SourceLanguageBorder.Content"
+          uid="{B8622669-C52F-4284-B908-D133F8F6478A}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="GridColumns=6&amp;ContentAlign=Left&amp;Id=TargetLanguageBorder&amp;PaddingType=Bottom&amp;UsePadding=1"
+          ph="LanguagesColPanelRight.Content"
+          uid="{DEAB9E17-3FC8-4479-8D74-01295DFFAFFB}" />
+        <r
+          ds="{941D97BB-4B3D-48BD-8F23-56160375BCE0}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TargetLanguageText"
+          ph="TargetLanguageBorder.Content"
+          uid="{01941D7B-355E-4418-AB51-5A07335EA878}" />
+        <r
+          id="{08B6767B-8E8A-41C8-8880-EFEBB4EAE0E3}"
+          par="Id=TargetLanguageTreeView&amp;PreLoadPath=%2f%7b11111111-1111-1111-1111-111111111111%7d%2f%7b13D6D6C6-C50B-4BBD-B331-2B04F1A58F21%7d%2f%7b64C4F646-A3FA-4205-B98E-4DE2C609B60F%7d&amp;Database=master&amp;RootItem=%7b64C4F646-A3FA-4205-B98E-4DE2C609B60F%7d&amp;ShowIconImage=1&amp;IsCheckboxEnabled=1"
+          ph="TargetLanguageBorder.Content"
+          uid="{FA728782-7C42-471B-9362-0300A38B93A7}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="Id=FooterPlaceholderRowPanel"
+          ph="OverallColumnPanel.Content"
+          uid="{79D89E75-849F-44E9-9468-10E2E779FE26}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=FooterPlaceholderBorder1&amp;PaddingType=All&amp;UsePadding=1"
+          ph="FooterPlaceholderRowPanel.Content"
+          uid="{0ACAC501-BF26-459C-BD13-3F1F8253691F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=FooterPlaceholderBorder2&amp;PaddingType=All&amp;UsePadding=1"
+          ph="FooterPlaceholderRowPanel.Content"
+          uid="{15ABD8D0-49D2-4D57-A615-8ED8C5A89A26}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=FinalConfirmationColPanelLeft&amp;GridColumns=5&amp;ContentAlign=Left"
+          ph="DialogFooter.Buttons"
+          uid="{A6E2AF32-5114-48A6-8F35-D594ACCD4773}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="Id=FinalConfirmationPanel"
+          ph="FinalConfirmationColPanelLeft.Content"
+          uid="{D13011B7-ACE3-472F-8921-494AC4FB2260}" />
+        <r
+          ds="{44C5A288-054E-4A20-B41F-E6AABE6E1985}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=FinalConfirmationText"
+          ph="FinalConfirmationPanel.Content"
+          uid="{0F09979A-DE2C-4BEA-9050-714616B66FE7}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=FinalConfirmationBorder&amp;PaddingType=Bottom&amp;UsePadding=1"
+          ph="FinalConfirmationPanel.Content"
+          uid="{0ADA79FD-E904-4A88-9C50-720A63730DEA}" />
+        <r
+          ds="{FB4B5425-3399-4267-8964-717723EC602B}"
+          id="{3824DAB6-745A-468A-9D75-044591E72FB5}"
+          par="Id=FinalConfirmationCheckBox"
+          ph="FinalConfirmationBorder.Content"
+          uid="{E6EADC72-7D75-452D-A73D-A5AE92576F62}" />
+        <r
+          ds="{685FBEB6-15F9-4DFF-B76F-39EFC2F18A87}"
+          id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}"
+          par="Id=CreateTaskButton&amp;IsEnabled=0&amp;ButtonType=Primary"
+          ph="DialogFooter.Buttons"
+          uid="{F5005B19-B18B-47BE-B0CA-D92005C2FECA}" />
+        <r
+          ds="{BEABC7A4-0D0A-4D4C-9220-CF3124FA4DA3}"
+          id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}"
+          par="Id=CancelButton&amp;ButtonType=Default"
+          ph="DialogFooter.Buttons"
+          uid="{271450CA-66F4-49AC-B582-BABC2CB06E62}" />
+        <r
+          id="{1169C5EF-E49C-4B59-848D-9C9204E40D12}"
+          par="RuleItemId=%7bDFF12B0F-12A0-4EE7-878E-F2456A107685%7d&amp;Id=ScreenResolutionRule&amp;Trigger=window%3aresize&amp;Field=Rule"
+          ph="Page.Body"
+          uid="{B252B3EE-80B0-4E78-A86C-26D66D1F7D6C}" />
+        <r
+          id="{1169C5EF-E49C-4B59-848D-9C9204E40D12}"
+          par="RuleItemId=%7bF96DB07D-C6F6-4489-AA39-E4A1A5A53322%7d&amp;Id=InsertButtonRule&amp;TargetControl=CreateTaskButton&amp;Trigger=click&amp;Field=Rule"
+          ph="Page.Body"
+          uid="{A50097BD-E0C2-4327-B448-428F86A655A0}" />
+        <r
+          id="{1169C5EF-E49C-4B59-848D-9C9204E40D12}"
+          par="RuleItemId=%7bFE4B0027-EEF9-48CC-BCF1-35AA3AA5177B%7d&amp;Id=CancelButtonRule&amp;TargetControl=CancelButton&amp;Trigger=click&amp;Field=Rule"
+          ph="Page.Body"
+          uid="{A975BD6C-E1D7-47E9-9A1A-DB43BB6FD6A0}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=PageId&amp;IsVisible=0"
+          ph="Page.Body"
+          uid="{C408287A-1AB4-482E-B8D3-0B7514AAAB36}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=SourceLanguage&amp;IsVisible=0"
+          ph="Page.Body"
+          uid="{F06C70AD-2F71-44E0-8053-3F92ACFF1F29}" />
+      </d>
+    </r>
+- ID: "f7b4ebc1-2335-4eb8-afae-3444923a38be"
+  Hint: Subthemes
+  Type: Checklist
+  Value: "{F69304BA-2B80-4555-96DD-6F08559405E1}"
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: InsertLinkDialog
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20141025T013115:635497974758211911Z"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: Indsæt link
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: LinkDialogEinfügen
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20141025T014454:635497982947328029Z"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: Link einfügen
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130118T141052Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: Copy Page To Versions
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: リンクを挿入ダイアログ
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20141025T021702:635498002225949392Z"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: リンクを挿入

@@ -4,7 +4,13 @@
     <id>$id$.$productversion$</id>
     <version>$version$</version>
     <authors>Namics AG</authors>
-    <description>Namics Common Packages CopyPageToVersions.</description>
+    <owners>Namics AG</owners>
+    <licenseUrl>https://github.com/namics/SitecoreCopyPageToVersions/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/namics/SitecoreCopyPageToVersions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package provides a Sitecore module to copy pages from a specific language version to other language versions.</description>
+    <copyright>Copyright 2019</copyright>
+    <tags>sitecore copy language versions namics</tags>
     <language>en-US</language>
   </metadata>
   <files>

@@ -1,0 +1,18 @@
+﻿---
+ID: "8ef040c9-d8ef-42c5-a6c0-ac78b2acdaa6"
+Parent: "082e890d-6e33-4163-a057-c9d859f1f164"
+Template: "d2388938-c296-40c0-8587-a9c77e8f23fa"
+Path: /sitecore/system/Modules/Copy Page To Versions/Copy Page To Versions Configuration
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161219T092933Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,18 @@
+﻿---
+ID: "7d534e19-fe6d-444e-9e1c-5e865b7a5e17"
+Parent: "d2388938-c296-40c0-8587-a9c77e8f23fa"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/CopyPageToVersions/Configurations/Copy Page To Versions Configuration/Copy Page To Versions Configuration Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161219T092643Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,80 @@
+﻿---
+ID: "0776263b-ea5e-4ee3-86da-055ea0d9d98f"
+Parent: "c5186753-86ee-4317-b259-0c8226f9d3ba"
+Template: "622d0279-3d83-4fa7-8c8f-45875615c7d8"
+Path: /sitecore/client/Applications/Dialogs/CopyPageToVersionsDialog/PageSettings/Messages/MustSelectTargetLanguage
+DB: core
+SharedFields:
+- ID: "2a471c94-914f-4724-9552-ed0ac2fd5423"
+  Hint: IsClosable
+  Type: Checkbox
+  Value: 0
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Der skal vælges et Item for at gemme
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151207T115214Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d281bd0c-d3ef-4012-b560-5daaf3fa37a8"
+      Hint: Text
+      Value: Der skal vælges et Item for at gemme
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: EsMussEinItemZumSpeichernGewähltWerden
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151207T115341Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d281bd0c-d3ef-4012-b560-5daaf3fa37a8"
+      Hint: Text
+      Value: Sie müssen ein Item zum Speichern auswählen.
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20141218T102714Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d281bd0c-d3ef-4012-b560-5daaf3fa37a8"
+      Hint: Text
+      Value: You must select at least one Target Language
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 保存するアイテムを選択してください
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151207T115501Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d281bd0c-d3ef-4012-b560-5daaf3fa37a8"
+      Hint: Text
+      Value: 保存するアイテムを選択してください

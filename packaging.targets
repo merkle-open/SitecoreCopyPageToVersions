@@ -25,7 +25,7 @@
     <NugetRepository Condition="'$(NugetRepository)' == ''">C:\nuget_local</NugetRepository>
     
     <!-- prerealse version suffix -->
-    <PrereleaseVersion Condition="'$(PrereleaseVersion)' == ''">alpha</PrereleaseVersion>
+    <PrereleaseVersion Condition="'$(PrereleaseVersion)' == ''"></PrereleaseVersion>
 	
 	  <!-- product version -->
     <ProductVersion Condition="'$(ProductVersion)' == ''">Sc90</ProductVersion>

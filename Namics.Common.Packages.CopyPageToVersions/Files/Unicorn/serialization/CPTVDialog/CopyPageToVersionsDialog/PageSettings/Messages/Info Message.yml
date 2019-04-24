@@ -1,0 +1,75 @@
+﻿---
+ID: "63fa5ff1-41cf-4562-895f-2c3c665af41e"
+Parent: "c5186753-86ee-4317-b259-0c8226f9d3ba"
+Template: "76c2629e-3b7d-4eee-82d0-f5df443b56a5"
+Path: /sitecore/client/Applications/Dialogs/CopyPageToVersionsDialog/PageSettings/Messages/Info Message
+DB: core
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Der blev ikke fundet nogen elementer
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151207T115233Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d281bd0c-d3ef-4012-b560-5daaf3fa37a8"
+      Hint: Text
+      Value: Der blev ikke fundet nogen elementer.
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Keine Items gefunden
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151207T115401Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d281bd0c-d3ef-4012-b560-5daaf3fa37a8"
+      Hint: Text
+      Value: Es wurden keine Items gefunden.
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130130T060650Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d281bd0c-d3ef-4012-b560-5daaf3fa37a8"
+      Hint: Text
+      Value: All renderings and according datasources will be copied from the Source Language to the selected Target Languages
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: アイテムがみつかりません
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151207T115523Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d281bd0c-d3ef-4012-b560-5daaf3fa37a8"
+      Hint: Text
+      Value: アイテムがみつかりません
