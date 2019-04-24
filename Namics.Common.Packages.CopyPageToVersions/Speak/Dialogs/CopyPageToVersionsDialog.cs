@@ -88,14 +88,12 @@ namespace Namics.Common.Packages.CopyPageToVersions.Speak.Dialogs
                 return;
             }
 
-            string rootItemId;
-            if (!TryGetRootItemId(treeView, out rootItemId))
+            if (!TryGetRootItemId(treeView, out var rootItemId))
             {
                 return;
             }
 
-            string idPath;
-            if (!TryGetIdPath(idString, rootItemId, out idPath))
+            if (!TryGetIdPath(idString, rootItemId, out var idPath))
             {
                 if (!TryGetIdPath(rootItemId, rootItemId, out idPath))
                 {
@@ -149,8 +147,7 @@ namespace Namics.Common.Packages.CopyPageToVersions.Speak.Dialogs
 
         private static void PreloadRootItem(Rendering treeView, string rootItemId)
         {
-            string idPath;
-            if (!TryGetIdPath(rootItemId, rootItemId, out idPath))
+            if (!TryGetIdPath(rootItemId, rootItemId, out var idPath))
             {
                 return;
             }
@@ -160,8 +157,7 @@ namespace Namics.Common.Packages.CopyPageToVersions.Speak.Dialogs
 
         private static void PreloadRootItem(Rendering treeView)
         {
-            string rootItemId;
-            if (!TryGetRootItemId(treeView, out rootItemId))
+            if (!TryGetRootItemId(treeView, out var rootItemId))
             {
                 return;
             }

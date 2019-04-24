@@ -45,8 +45,7 @@ namespace Namics.Common.Packages.CopyPageToVersions.Processors
             }
 
             // get source language
-            Language sourceLanguage;
-            if (!GetLanguageFromLangItem(args.SourceLanguageIdString, database, out sourceLanguage))
+            if (!GetLanguageFromLangItem(args.SourceLanguageIdString, database, out var sourceLanguage))
             {
                 AbortPipeline(args, string.Format(ErrorMessageSourceLanguage, args.SourceLanguageIdString));
                 return;
@@ -85,8 +84,7 @@ namespace Namics.Common.Packages.CopyPageToVersions.Processors
                         continue;
                     }
 
-                    Language targetLanguage;
-                    if (!GetLanguageFromLangItem(splittedTargetLanguage, database, out targetLanguage))
+                    if (!GetLanguageFromLangItem(splittedTargetLanguage, database, out var targetLanguage))
                     {
                         SetWarnMessage(args, string.Format(ErrorMessageInvalidTargetLanguage, splittedTargetLanguage));
                         continue;
@@ -98,8 +96,7 @@ namespace Namics.Common.Packages.CopyPageToVersions.Processors
             args.TargetLanguages.AddRange(targetLanguages);
 
             // get page item
-            ID pageId;
-            if (string.IsNullOrEmpty(args.PageId) || !ID.TryParse(args.PageId, out pageId))
+            if (string.IsNullOrEmpty(args.PageId) || !ID.TryParse(args.PageId, out var pageId))
             {
                 AbortPipeline(args, ErrorMessageNoPageId);
                 return;
@@ -125,8 +122,7 @@ namespace Namics.Common.Packages.CopyPageToVersions.Processors
 
         private bool GetLanguageFromLangItem(string languageItemId, Database database, out Language language)
         {
-            ID itemId;
-            if (string.IsNullOrEmpty(languageItemId) || !ID.TryParse(languageItemId, out itemId))
+            if (string.IsNullOrEmpty(languageItemId) || !ID.TryParse(languageItemId, out var itemId))
             {
                 language = null;
                 return false;

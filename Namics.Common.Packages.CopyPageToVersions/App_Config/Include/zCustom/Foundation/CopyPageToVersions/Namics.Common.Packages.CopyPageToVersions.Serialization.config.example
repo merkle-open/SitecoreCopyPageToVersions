@@ -1,0 +1,20 @@
+﻿<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/" xmlns:role="http://www.sitecore.net/xmlconfig/role/">
+  <sitecore role:require="Standalone or ContentManagement">
+    <unicorn>
+      <configurations>
+        <configuration name="Foundation.CopyPageToVersions" description="Foundation CopyPageToVersions" dependencies="Foundation.Serialization" extends="Helix.Foundation">
+          <predicate>
+            <include name="SystemModulesCPTV" database="master" path="/sitecore/system/Modules/Copy Page To Versions" />
+
+            <include name="CPTVDialog" database="core" path="/sitecore/client/Applications/Dialogs/CopyPageToVersionsDialog" />
+            <include name="CPTVEEPipeline" database="core" path="/sitecore/client/Applications/ExperienceEditor/Pipelines/Foundation/CopyPageToVersions" />
+            <include name="CPTVActionsRule" database="core" path="/sitecore/client/Business Component Library/version 1/Layouts/Renderings/Resources/Rule/Rules/Actions/CopyPageToVersions" />
+            <include name="CPTVCEChunk" database="core" path="/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Copy Page To Versions Chunk" />
+            <include name="CPTVCEStrip" database="core" path="/sitecore/content/Applications/Content Editor/Ribbons/Strips/Versions/Copy" />
+            <include name="CPTVEEStrip" database="core" path="/sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Versions/Copy" />
+          </predicate>
+        </configuration>
+      </configurations>
+    </unicorn>
+  </sitecore>
+</configuration>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$.$productversion$</id>
+    <version>$version$</version>
+    <authors>Namics AG</authors>
+    <description>Namics Common Packages CopyPageToVersions.</description>
+    <language>en-US</language>
+  </metadata>
+  <files>
+    <file src="..\README.md" target="\" />
+  </files>
+</package>

@@ -9,8 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Namics.Common.Packages.CopyPageToVersions</RootNamespace>
     <AssemblyName>Namics.Common.Packages.CopyPageToVersions</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -89,9 +92,12 @@
     <Folder Include="Files\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Config\Include\zCustom\Namics.Common.Packages.CopyPageToVersions.config">
+    <Content Include="App_Config\Include\zCustom\Foundation\CopyPageToVersions\Namics.Common.Packages.CopyPageToVersions.config">
       <SubType>Designer</SubType>
-    </None>
+    </Content>
+    <Content Include="App_Config\Include\zCustom\Foundation\CopyPageToVersions\Namics.Common.Packages.CopyPageToVersions.Serialization.config.example">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +107,15 @@
     <Content Include="sitecore\shell\client\Speak\Layouts\Renderings\Resources\Rules\ConditionsAndActions\Actions\CopyPageToVersions.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MSBuild.Extension.Pack.1.9.1\build\net40\MSBuild.Extension.Pack.targets" Condition="Exists('..\packages\MSBuild.Extension.Pack.1.9.1\build\net40\MSBuild.Extension.Pack.targets')" />
+  <Import Project="$(SolutionDir)\versioning.targets" />
+  <Import Project="$(SolutionDir)\packaging.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSBuild.Extension.Pack.1.9.1\build\net40\MSBuild.Extension.Pack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuild.Extension.Pack.1.9.1\build\net40\MSBuild.Extension.Pack.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
