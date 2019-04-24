@@ -2,6 +2,8 @@
 
 1. [Management Summary](#management-summary)
 2. [Installation](#installation)
+    * [Via item package](#via-item-package)
+    * [Via NuGet package](#via-nuget-package)
 3. [Assembly references and dependencies](#assembly-references-and-dependencies)
 4. [Configuration](#configuration)
 5. [Usage](#usage)
